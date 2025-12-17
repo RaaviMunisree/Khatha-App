@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || 'https://khatha-app-3.onrender.com',
+  baseURL: 'https://khatha-app-3.onrender.com',
 });
 
 api.interceptors.request.use(
@@ -18,5 +18,6 @@ api.interceptors.request.use(
 );
 
 export default api;
+
 
 
